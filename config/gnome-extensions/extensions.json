@@ -1,0 +1,21 @@
+[
+  {"uuid": "blur-my-shell@aunetx", "name": "Blur my Shell", "enabled": true, "source": "extensions.gnome.org", "url": "https://extensions.gnome.org/extension/3193/blur-my-shell/"},
+  {"uuid": "burn-my-windows@schneegans.github.com", "name": "Burn My Windows", "enabled": true, "source": "github", "url": "https://github.com/Schneegans/Burn-My-Windows"},
+  {"uuid": "caffeine@patapon.info", "name": "Caffeine", "enabled": true, "source": "github", "url": "https://github.com/eonpatapon/gnome-shell-extension-caffeine"},
+  {"uuid": "compiz-alike-magic-lamp-effect@hermes83.github.com", "name": "Compiz Magic Lamp", "enabled": true, "source": "extensions.gnome.org"},
+  {"uuid": "compiz-windows-effect@hermes83.github.com", "name": "Compiz Wobbly Windows", "enabled": true, "source": "extensions.gnome.org"},
+  {"uuid": "CoverflowAltTab@palatis.blogspot.com", "name": "Coverflow Alt-Tab", "enabled": false, "source": "github"},
+  {"uuid": "gsconnect@andyholmes.github.io", "name": "GSConnect", "enabled": true, "source": "extensions.gnome.org"},
+  {"uuid": "hidetopbar@mathieu.bidon.ca", "name": "Hide Top Bar", "enabled": false, "source": "extensions.gnome.org"},
+  {"uuid": "live-lockscreen@nick-redwill", "name": "Live Lock Screen", "enabled": true, "source": "github"},
+  {"uuid": "monitor@astraext.github.io", "name": "Astra Monitor", "enabled": true, "source": "github", "url": "https://github.com/AstraExt/astra-monitor"},
+  {"uuid": "Move_Clock@rmy.pobox.com", "name": "Frippery Move Clock", "enabled": true, "source": "extensions.gnome.org"},
+  {"uuid": "space-bar@luchrioh", "name": "Space Bar", "enabled": true, "source": "extensions.gnome.org"},
+  {"uuid": "tiling-assistant@leleat-on-github", "name": "Tiling Assistant", "enabled": true, "source": "github"},
+  {"uuid": "user-theme@gnome-shell-extensions.gcampax.github.com", "name": "User Themes", "enabled": true, "source": "apt"},
+  {"uuid": "Vitals@CoreCoding.com", "name": "Vitals", "enabled": true, "source": "github"},
+  {"uuid": "ubuntu-dock@ubuntu.com", "name": "Ubuntu Dock", "enabled": true, "source": "apt"},
+  {"uuid": "places-menu@gnome-shell-extensions.gcampax.github.com", "name": "Places Menu", "enabled": true, "source": "apt"},
+  {"uuid": "apps-menu@gnome-shell-extensions.gcampax.github.com", "name": "Apps Menu", "enabled": true, "source": "apt"},
+  {"uuid": "compact-quick-settings@gnome-shell-extensions.mariospr.org", "name": "Compact Quick Settings", "enabled": true, "source": "extensions.gnome.org"}
+]

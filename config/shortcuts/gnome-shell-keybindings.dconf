@@ -1,0 +1,5 @@
+[/]
+show-screenshot-ui=['<Super>z']
+toggle-application-view=@as []
+toggle-message-tray=@as []
+toggle-quick-settings=@as []

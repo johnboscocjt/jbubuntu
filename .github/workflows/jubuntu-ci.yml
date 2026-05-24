@@ -1,0 +1,51 @@
+name: Jubuntu CI
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'jubuntu/**'
+      - '.github/workflows/jubuntu-ci.yml'
+  pull_request:
+    branches: [main]
+    paths:
+      - 'jubuntu/**'
+      - '.github/workflows/jubuntu-ci.yml'
+
+jobs:
+  syntax:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Validate Jubuntu shell scripts
+        run: |
+          bash -n jubuntu/install
+          bash -n jubuntu/install.sh
+          bash -n jubuntu/setup.sh
+          bash -n jubuntu/bin/jubuntu
+
+      - name: Check required files exist
+        run: |
+          test -f jubuntu/manifest.conf
+          test -f jubuntu/data/apt-core.txt
+          test -f jubuntu/README.md
+
+      - name: Count apt-core packages
+        run: |
+          count=$(grep -v '^#' jubuntu/data/apt-core.txt | grep -v '^[[:space:]]*$' | wc -l)
+          echo "apt-core packages: $count"
+          test "$count" -ge 60
+          test "$count" -le 100
+
+  dry-run:
+    runs-on: ubuntu-latest
+    container: ubuntu:24.04
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install bash dependencies for dry-run
+        run: apt-get update -qq && apt-get install -y -qq git curl
+
+      - name: Dry-run Jubuntu setup
+        run: bash jubuntu/setup.sh --dry-run

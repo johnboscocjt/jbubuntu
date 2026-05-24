@@ -1,0 +1,19 @@
+{
+    "files.autoSave": "afterDelay",
+    "workbench.iconTheme": "material-icon-theme",
+    "[php]": {
+        "editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
+    },
+    "html-css-class-completion.enableEmmetSupport": true,
+    "emmet.triggerExpansionOnTab": true,
+    "emmet.showSuggestionsAsSnippets": true,
+    "workbench.colorTheme": "Default Dark Modern",
+    "windsurf.autocompleteSpeed": "default",
+    "windsurf.autoExecutionPolicy": "off",
+    "windsurf.rememberLastModelSelection": false,
+    "windsurf.explainAndFixInCurrentConversation": false,
+    "windsurf.chatFontSize": "default",
+    "windsurf.openRecentConversation": false,
+    "windsurf.enableTabToJump": false,
+    "terminal.integrated.showCommandHint": false
+}

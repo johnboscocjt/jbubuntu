@@ -1,0 +1,16 @@
+[plugins]
+disabled-actions=@as []
+
+[preferences]
+show-hidden-files=false
+
+[search]
+search-files-recursively=true
+search-reverse-sort=false
+search-sort-column='name'
+
+[window-state]
+geometry='800x550+45+29'
+maximized=true
+sidebar-bookmark-breakpoint=5
+start-with-sidebar=true

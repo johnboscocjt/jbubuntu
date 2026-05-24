@@ -1,0 +1,15 @@
+Bruno
+Obsidian
+Postman
+Vysor
+auto-cpufreq
+containerd
+docker-desktop
+drawio
+freedownloadmanager
+google
+kingsoft
+klippboard
+pt
+sublime_text
+warpdotdev

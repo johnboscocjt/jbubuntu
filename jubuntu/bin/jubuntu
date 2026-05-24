@@ -1,0 +1,70 @@
+#!/usr/bin/env bash
+# Jubuntu CLI — post-install helper
+set -euo pipefail
+
+JUROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+if [[ -d "$JUROOT/config" && -d "$JUROOT/dotfiles" ]]; then
+  REPO_ROOT="$JUROOT"
+else
+  REPO_ROOT="$(cd "$JUROOT/.." && pwd)"
+fi
+
+usage() {
+  cat <<EOF
+Jubuntu CLI — opinionated Ubuntu developer setup
+
+Usage: jubuntu <command>
+
+Commands:
+  doctor     Check install health (services, tools, symlink)
+  update     Pull latest repo and re-run setup (safe)
+  config     Print paths to repo and docs
+  help       Show this help
+EOF
+}
+
+cmd_doctor() {
+  echo "=== Jubuntu doctor ==="
+  echo ""
+  echo "Symlink: $([ -L "$HOME/jubuntu" ] && readlink -f "$HOME/jubuntu" || echo 'MISSING — run install.sh')"
+  echo "Repo:    $REPO_ROOT"
+  echo ""
+  for cmd in git gh php composer node cursor code zsh kitty lsd; do
+    if command -v "$cmd" >/dev/null 2>&1; then
+      echo "  OK  $cmd ($(command -v "$cmd"))"
+    else
+      echo "  --  $cmd not found"
+    fi
+  done
+  echo ""
+  for svc in mariadb postgresql redis-server apache2 php8.3-fpm; do
+    status=$(systemctl is-active "$svc" 2>/dev/null || echo "inactive")
+  echo "  $svc: $status"
+  done
+  echo ""
+  echo "Run: gh auth login  (if gh not authenticated)"
+  echo "Run: $REPO_ROOT/scripts/apply-gnome-config.sh  (after GNOME login)"
+}
+
+cmd_update() {
+  if [[ -d "$REPO_ROOT/.git" ]]; then
+    git -C "$REPO_ROOT" pull --ff-only origin main || git -C "$REPO_ROOT" pull origin main
+  fi
+  exec bash "$JUROOT/setup.sh"
+}
+
+cmd_config() {
+  echo "JUROOT=$JUROOT"
+  echo "REPO_ROOT=$REPO_ROOT"
+  echo "Docs: $REPO_ROOT/docs/"
+  echo "Apps: $REPO_ROOT/apps/"
+  echo "Projects: $REPO_ROOT/docs/projects/"
+}
+
+case "${1:-help}" in
+  doctor) cmd_doctor ;;
+  update) cmd_update ;;
+  config) cmd_config ;;
+  help|-h|--help) usage ;;
+  *) echo "Unknown command: $1"; usage; exit 1 ;;
+esac

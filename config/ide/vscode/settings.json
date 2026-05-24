@@ -1,0 +1,120 @@
+{
+    "files.autoSave": "afterDelay",
+    "workbench.iconTheme": "material-icon-theme",
+    "[php]": {
+        "editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
+    },
+    "workbench.productIconTheme": "material-product-icons",
+    "[blade]": {
+        "editor.defaultFormatter": "shufo.vscode-blade-formatter"
+    },
+    "redhat.telemetry.enabled": true,
+    "workbench.startupEditor": "none",
+    "emmet.includeLanguages": {
+        "javascript": "javascriptreact",
+        "blade": "html",
+        "html": "html",
+        "vue": "html",
+        "php": "html",
+    },
+    "cmake.options.statusBarVisibility": "visible",
+    "emmet.showSuggestionsAsSnippets": true,
+    "emmet.triggerExpansionOnTab": true,
+    "emmet.useInlineCompletions": true,
+    "html-css-class-completion.enableEmmetSupport": true,
+    "tailwindCSS.emmetCompletions": true,
+    "github.copilot.enable": {
+        "*": true,
+        "plaintext": false,
+        "markdown": false,
+        "scminput": false,
+        "php": true
+    },
+    "explorer.fileNesting.patterns": {
+        "*.ts": "${capture}.js",
+        "*.js": "${capture}.js.map, ${capture}.min.js, ${capture}.d.ts",
+        "*.jsx": "${capture}.js",
+        "*.tsx": "${capture}.ts",
+        "tsconfig.json": "tsconfig.*.json",
+        "package.json": "package-lock.json, yarn.lock, pnpm-lock.yaml, bun.lockb",
+        "pubspec.yaml": "pubspec.lock,pubspec_overrides.yaml,.packages,.flutter-plugins,.flutter-plugins-dependencies,.metadata",
+        "*.dart": "${capture}.g.dart",
+        "*.sqlite": "${capture}.${extname}-*",
+        "*.db": "${capture}.${extname}-*",
+        "*.sqlite3": "${capture}.${extname}-*",
+        "*.db3": "${capture}.${extname}-*",
+        "*.sdb": "${capture}.${extname}-*",
+        "*.s3db": "${capture}.${extname}-*"
+    },
+    "laravel-pint.enable": true,
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "mssql.connectionGroups": [
+        {
+            "name": "ROOT",
+            "id": "ROOT"
+        }
+    ],
+    "mssql.connections": [],
+    "[java]": {
+        "editor.defaultFormatter": "Oracle.oracle-java"
+    },
+    "[xml]": {
+        "editor.defaultFormatter": "redhat.vscode-xml"
+    },
+    "github.copilot.nextEditSuggestions.enabled": true,
+    "editor.quickSuggestions": {
+        "other": "on"
+    },
+    "editor.suggestOnTriggerCharacters": false,
+    "editor.wordBasedSuggestions": "off",
+    "C_Cpp.autocomplete": "disabled",
+    "workbench.secondarySideBar.defaultVisibility": "visible",
+    "editor.fontFamily": "'Cascadia Code', 'Fira Code', monospace",
+    "editor.fontLigatures": true,
+    "editor.fontSize": 14,
+    "editor.fontWeight": "normal",
+    "editor.renderWhitespace": "selection",
+    "docker.extension.enableComposeLanguageServer": false,
+    "[html]": {
+        "editor.suggest.insertMode": "replace",
+        "editor.defaultFormatter": "vscode.html-language-features"
+    },
+    "emmet.syntaxProfiles": {},
+    "editor.inlineSuggest.enabled": true,
+    "files.associations": {
+        "*.html": "html"
+    },
+    "editor.tabCompletion": "on",
+    "editor.snippetSuggestions": "top",
+    "chat.instructionsFilesLocations": {
+        ".github/instructions": true,
+        ".claude/rules": true,
+        "~/.copilot/instructions": true,
+        "~/.claude/rules": true,
+        "/tmp/postman-collections-post-response.instructions.md": true,
+        "/tmp/postman-collections-pre-request.instructions.md": true,
+        "/tmp/postman-folder-post-response.instructions.md": true,
+        "/tmp/postman-folder-pre-request.instructions.md": true,
+        "/tmp/postman-http-request-post-response.instructions.md": true,
+        "/tmp/postman-http-request-pre-request.instructions.md": true
+    },
+    "liveServer.settings.donotShowInfoMsg": true,
+    "[javascript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "vsicons.dontShowNewVersionMessage": true,
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[css]": {
+        "editor.defaultFormatter": "vscode.css-language-features"
+    },
+    "workbench.colorTheme": "GitHub Dark Dimmed",
+    "gitlens.ai.model": "vscode",
+    "gitlens.ai.vscode.model": "copilot:gpt-4.1",
+    "diffEditor.maxComputationTime": 0,
+    "@azure.argTenant": ""
+}

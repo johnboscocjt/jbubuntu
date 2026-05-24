@@ -1,0 +1,106 @@
+{
+  "shortcuts": [
+    {
+      "id": 1,
+      "category": "Navigation",
+      "keys": "Super + D",
+      "description": "Show / Hide Desktop",
+      "notes": ""
+    },
+    {
+      "id": 2,
+      "category": "Navigation",
+      "keys": "Super + Left / Right",
+      "description": "Snap window to half screen",
+      "notes": ""
+    },
+    {
+      "id": 3,
+      "category": "Navigation",
+      "keys": "Super + Up",
+      "description": "Maximise window",
+      "notes": ""
+    },
+    {
+      "id": 4,
+      "category": "Terminal",
+      "keys": "Ctrl + Alt + T",
+      "description": "Open Terminal",
+      "notes": "Default Ubuntu terminal shortcut"
+    },
+    {
+      "id": 5,
+      "category": "Terminal",
+      "keys": "Ctrl + Shift + C",
+      "description": "Copy in Terminal",
+      "notes": ""
+    },
+    {
+      "id": 6,
+      "category": "Terminal",
+      "keys": "Ctrl + Shift + V",
+      "description": "Paste in Terminal",
+      "notes": ""
+    },
+    {
+      "id": 7,
+      "category": "Browser",
+      "keys": "Ctrl + T",
+      "description": "New Tab",
+      "notes": ""
+    },
+    {
+      "id": 8,
+      "category": "Browser",
+      "keys": "Ctrl + Shift + T",
+      "description": "Reopen closed Tab",
+      "notes": ""
+    },
+    {
+      "id": 9,
+      "category": "Browser",
+      "keys": "Ctrl + L",
+      "description": "Focus address bar",
+      "notes": ""
+    },
+    {
+      "id": 10,
+      "category": "System",
+      "keys": "Ctrl + Alt + Del",
+      "description": "Log Out / System Monitor",
+      "notes": ""
+    },
+    {
+      "id": 11,
+      "category": "System",
+      "keys": "Super + Z",
+      "description": "Take screenshot",
+      "notes": "Saved to ~/Pictures"
+    }
+  ],
+  "next_id": 16,
+  "apps": {
+    "vscode": {
+      "shortcuts": [
+        {
+          "id": 1,
+          "category": "vscode",
+          "keys": "Ctrl + `",
+          "description": "Open VS code terminal",
+          "notes": ""
+        }
+      ],
+      "next_id": 2
+    }
+  },
+  "my_apps": [
+    {
+      "name": "vscode",
+      "description": "coding",
+      "repo_url": "https://github.com/johnboscocjt/myjshortcuts-file/blob/master/jshortcuts.json",
+      "yt_how_to": "https://www.youtube.com/watch?v=dj_zUJNv_zc&list=RDdj_zUJNv_zc&start_radio=1&pp=oAcB0gcJCdsKAYcqIYzv",
+      "yt_desc": "https://www.youtube.com/watch?v=dj_zUJNv_zc&list=RDdj_zUJNv_zc&start_radio=1&pp=oAcB0gcJCdsKAYcqIYzv",
+      "custom_fields": []
+    }
+  ]
+}

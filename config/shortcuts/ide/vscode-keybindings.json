@@ -1,0 +1,23 @@
+// Place your key bindings in this file to override the defaults
+[
+    {
+        "key": "i ctrl",
+        "command": "workbench.action.chat.startVoiceChat",
+        "when": "chatIsEnabled && hasSpeechProvider && inChatInput && !chatSessionRequestInProgress && !editorFocus && !notebookEditorFocused && !scopedVoiceChatGettingReady && !speechToTextInProgress || chatIsEnabled && hasSpeechProvider && inlineChatFocused && !chatSessionRequestInProgress && !editorFocus && !notebookEditorFocused && !scopedVoiceChatGettingReady && !speechToTextInProgress"
+    },
+    {
+        "key": "ctrl+i",
+        "command": "-workbench.action.chat.startVoiceChat",
+        "when": "chatIsEnabled && hasSpeechProvider && inChatInput && !chatSessionRequestInProgress && !editorFocus && !notebookEditorFocused && !scopedVoiceChatGettingReady && !speechToTextInProgress || chatIsEnabled && hasSpeechProvider && inlineChatFocused && !chatSessionRequestInProgress && !editorFocus && !notebookEditorFocused && !scopedVoiceChatGettingReady && !speechToTextInProgress"
+    },
+    {
+        "key": "ctrl+i m",
+        "command": "emojisense.quickEmoji",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+i",
+        "command": "-emojisense.quickEmoji",
+        "when": "editorTextFocus"
+    }
+]

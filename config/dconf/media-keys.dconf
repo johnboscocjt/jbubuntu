@@ -1,0 +1,35 @@
+[/]
+control-center=['<Super>s']
+custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom4/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom5/']
+home=['<Super>e']
+terminal=@as []
+
+[custom-keybindings/custom0]
+binding='<Super>a'
+command='ulauncher-toggle'
+name='ulauncher'
+
+[custom-keybindings/custom1]
+binding='<Super>v'
+command='/home/jbtechnix/clip_popup.sh'
+name='Clipboard Popup'
+
+[custom-keybindings/custom2]
+binding='<Control><Alt>t'
+command='kitty'
+name='kitty'
+
+[custom-keybindings/custom3]
+binding='<Super>f'
+command='flatpak run com.github.tenderowl.frog'
+name='frog screenshot'
+
+[custom-keybindings/custom4]
+binding='<Super>j'
+command='/home/jbtechnix/bin/jshortcuts gui'
+name='jshortcuts'
+
+[custom-keybindings/custom5]
+binding='<Super>g'
+command='flatpak run io.github.shiftey.Desktop'
+name='Github Desktop'

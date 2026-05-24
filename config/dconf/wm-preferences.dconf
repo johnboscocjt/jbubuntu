@@ -1,0 +1,6 @@
+[/]
+action-right-click-titlebar='menu'
+button-layout=':minimize,maximize,close'
+focus-mode='click'
+theme='Mojave-Dark'
+workspace-names=@as []

@@ -1,0 +1,29 @@
+#!/usr/bin/env bash
+# Jubuntu curl pipe bootstrap
+set -euo pipefail
+
+if [[ ! -f /etc/os-release ]]; then
+  echo "Error: Jubuntu requires a Linux system with /etc/os-release" >&2
+  exit 1
+fi
+
+# shellcheck source=/dev/null
+source /etc/os-release
+
+if [[ "${ID:-}" != "ubuntu" ]]; then
+  echo "Warning: Jubuntu is designed for Ubuntu LTS (detected: ${ID:-unknown})"
+fi
+
+echo "Jubuntu — opinionated developer Ubuntu setup"
+echo "Detected: ${PRETTY_NAME:-Unknown}"
+echo ""
+
+# Default: jbubuntu monorepo path. Standalone repo overrides via JUBUNTU_INSTALL_URL.
+INSTALL_URL="${JUBUNTU_INSTALL_URL:-https://raw.githubusercontent.com/johnboscocjt/jbubuntu/main/jubuntu/install.sh}"
+
+if ! command -v curl >/dev/null 2>&1; then
+  echo "Installing curl..."
+  sudo apt-get update -qq && sudo apt-get install -y curl
+fi
+
+exec bash -c "$(curl -fsSL "$INSTALL_URL")"

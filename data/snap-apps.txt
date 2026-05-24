@@ -1,0 +1,14 @@
+amass
+another-redis-desktop-manager
+celeste
+discord
+fontvuer
+freetube
+ghostty
+gitkraken
+metadata-cleaner
+notes
+phpstorm
+pycharm-community
+qalculate
+telegram-desktop

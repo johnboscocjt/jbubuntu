@@ -1,0 +1,108 @@
+# Jubuntu curated APT core (~80 packages) — dev + GNOME + databases + CLI
+# Third-party apps (cursor, code, chrome, docker, etc.) via ../data/apt-third-party.sh
+
+# Build & languages
+build-essential
+cmake
+clang
+gcc
+make
+pkg-config
+golang-go
+nodejs
+python3-pip
+python3-venv
+pipx
+pipenv
+
+# Git & GitHub
+git
+gh
+gnupg
+gpg
+gpg-agent
+
+# Editors & terminals (APT; cursor/code/warp via third-party)
+kitty
+terminator
+neovim
+vim-gtk3
+sublime-text
+
+# PHP & web stack (version-agnostic metapackages)
+php
+php-fpm
+php-mysql
+php-pgsql
+php-redis
+php-xml
+php-mbstring
+php-curl
+php-zip
+php-intl
+php-bcmath
+phpmyadmin
+apache2
+libapache2-mod-php
+
+# Databases
+mariadb-server
+postgresql
+redis-server
+
+# Database admin
+pgadmin4
+
+# GNOME & desktop
+gnome-shell-extension-manager
+gnome-shell-extensions
+gnome-tweaks
+gdm-settings
+chrome-gnome-shell
+nemo
+nemo-fileroller
+nautilus-sendto
+breeze-cursor-theme
+fonts-jetbrains-mono
+ulauncher
+plank
+pavucontrol
+
+# CLI tools
+bat
+lsd
+fastfetch
+neofetch
+htop
+nala
+jq
+curl
+wget
+unzip
+zip
+wl-clipboard
+xclip
+xdotool
+
+# Shell
+zsh
+zsh-autosuggestions
+zsh-syntax-highlighting
+
+# Package managers
+flatpak
+snapd
+gdebi
+
+# Media & utilities
+ffmpeg
+ubuntu-restricted-extras
+exfatprogs
+ntfs-3g
+
+# Python
+python3-django
+
+# System
+openssh-server
+fwupd

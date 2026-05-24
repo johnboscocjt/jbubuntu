@@ -1,0 +1,24 @@
+[user]
+	name = Jbtechnix - Mr. Humble Beginnings
+	email = johnboscocjt@gmail.com
+[core]
+	editor = code --wait
+	autocrlf = input
+[diff]
+	tool = vscode
+[difftool "vscode"]
+	cmd = "code --wait --diff $LOCAL $REMOTE"
+[alias]
+	lg = log --pretty=format:'%Cgreen%an%Creset committed %h on %cd'
+	unstage = restore --staged .
+[credential "https://github.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential
+[credential "https://gist.github.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true

@@ -1,0 +1,33 @@
+# Secrets and credentials
+.env
+*.pem
+**/.ssh/id_*
+**/hosts.yml
+config/gh/hosts.yml
+config/dev-environment/atuin/config.toml
+**/keyrings/**
+**/Cookies*
+**/DIPS*
+**/workspaceStorage/
+**/globalStorage/
+
+# History and backups
+*.history
+*.backup
+**/*.log
+
+# OS / editor
+.DS_Store
+*.swp
+.idea/
+.vscode/
+aiprompt*.md
+.cursor/
+
+# GSConnect certs (use templates only)
+config/dconf/shell-extensions-settings/gsconnect*.dconf
+
+# Build artifacts
+*.pyc
+__pycache__/
+node_modules/

@@ -1,0 +1,26 @@
+{
+  "mariadb": {
+    "service": "mariadb.service",
+    "status": "active"
+  },
+  "postgresql": {
+    "service": "postgresql.service",
+    "version": "18.4"
+  },
+  "redis": {
+    "service": "redis-server.service",
+    "status": "active"
+  },
+  "mongodb": {
+    "service": "mongod.service",
+    "status": "failed"
+  },
+  "php_fpm": [
+    "php8.3-fpm.service",
+    "php8.4-fpm.service"
+  ],
+  "apache": {
+    "service": "apache2.service",
+    "status": "active"
+  }
+}
